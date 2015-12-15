@@ -32,7 +32,7 @@ gulp.task('csslint-fail', function() {
 
 gulp.task('resemble', function() {
   return gulp.src('src/*.html')
-    .pipe(resemble({ misMatch: 0, fail: true }));
+    .pipe(resemble({ misMatch: 1, fail: true }));
 });
 
 gulp.task('test', ['html5-lint', 'csslint']);
