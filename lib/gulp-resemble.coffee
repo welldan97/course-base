@@ -1,7 +1,9 @@
-Resembler = require './resembler'
+path  = require 'path'
+fs = require 'fs'
 
 through = require('through2')
 
+Resembler = require './resembler'
 
 module.exports = ({ misMatch, fail }) ->
   src = './src/index.html'
@@ -13,6 +15,9 @@ module.exports = ({ misMatch, fail }) ->
     diffsDir: './tmp/diffs'
 
   through.obj (file, encoding, cb) ->
+    basename = path.basename file.path, '.html'
+    return cb() unless fs.existsSync "./resemble/#{basename}.png"
+
     resembler.checkPage file.path, (data) ->
       return cb() if data.misMatchPercentage < misMatch
 
