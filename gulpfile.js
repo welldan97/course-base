@@ -10,7 +10,7 @@ var resemble = require('./lib/gulp-resemble');
 
 gulp.task('html5-lint', function() {
   return gulp.src('src/*.html')
-    .pipe(html5Lint());
+    .pipe(html5Lint({ errorsOnly: true }));
 });
 
 gulp.task('csslint', function() {
