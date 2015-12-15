@@ -10,21 +10,21 @@
 .banner-image {
 	position: absolute;
 	margin-top: 186px;
-	margin-left: 232px;
+	margin-left: calc(18% + 6px);
 }
 .logo {
 	position: absolute;
 	margin-top: 46px;
-	margin-left: 198px;
+	margin-left: calc(15% + 10px);
 	opacity: 0.68;
 }
 .top-menu {
 	position: absolute;
 	margin-top: 28px;
-	margin-left: 597px;
+	margin-left: calc(45% + 22px);
 }
 .top-menu-links {
-	margin-left: 33px;
+	margin-left: calc(7% + 4px);
 	text-decoration: none;
 	color: #FFFFFF;
 	opacity: 0.68;
