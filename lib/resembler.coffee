@@ -25,7 +25,7 @@ class Resembler
           ph.exit()
           setTimeout cb, SLEEP_TIME
 
-    phantom.create phantomBody, weak: false
+    phantom.create phantomBody, dnodeOpts: weak: false
 
   checkPage: (page, cb) ->
     basename = path.basename page, '.html'
