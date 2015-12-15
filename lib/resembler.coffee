@@ -16,7 +16,7 @@ class Resembler
   constructor: ({ @shotsDir, @imagesDir, @diffsDir }) ->
 
   renderPage: (src, dest, cb) ->
-    phantom.create (ph) ->
+    phantomBody = (ph) ->
       ph.createPage (page) ->
         page.set 'viewportSize', VIEWPORT_SIZE
 
@@ -24,6 +24,8 @@ class Resembler
           page.render dest
           ph.exit()
           setTimeout cb, SLEEP_TIME
+
+    phantom.create phantomBody, weak: false
 
   checkPage: (page, cb) ->
     basename = path.basename page, '.html'
