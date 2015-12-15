@@ -18,6 +18,14 @@ gulp.task('csslint', function() {
     .pipe(csslint.reporter());
 });
 
+gulp.task('csslint-fail', function() {
+  gulp.src('assets/*.css')
+    .pipe(csslint({
+      'box-model': false
+    }))
+    .pipe(csslint.reporter('fail'));
+});
 
 gulp.task('test', ['html5-lint', 'csslint']);
+gulp.task('test-machine', ['html5-lint', 'csslint-fail']);
 gulp.task('default', ['test']);
