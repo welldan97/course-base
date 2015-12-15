@@ -6,12 +6,12 @@ var html5Lint = require('gulp-html5-lint');
 var csslint = require('gulp-csslint');
 
 gulp.task('html5-lint', function() {
-  return gulp.src('*.html')
+  return gulp.src('src/*.html')
     .pipe(html5Lint());
 });
 
 gulp.task('csslint', function() {
-  gulp.src('assets/*.css')
+  gulp.src('src/assets/*.css')
     .pipe(csslint({
       'box-model': false
     }))
@@ -19,7 +19,7 @@ gulp.task('csslint', function() {
 });
 
 gulp.task('csslint-fail', function() {
-  gulp.src('assets/*.css')
+  gulp.src('src/assets/*.css')
     .pipe(csslint({
       'box-model': false
     }))
