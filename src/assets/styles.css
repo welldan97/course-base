@@ -1,0 +1,13 @@
+.body {
+	margin: 0;
+}
+.header {
+	height: 488px;
+	background: url('./images/header-background.png');
+	background-size: cover;
+}
+.banner-image {
+	position: absolute;
+    left: 237px;
+    top: 180px;
+}
