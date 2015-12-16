@@ -10,28 +10,90 @@
 .banner-image {
 	position: absolute;
 	margin-top: 186px;
-	margin-left: calc(18% + 6px);
+	margin-left: calc(18% + 5px);
 }
 .logo {
 	position: absolute;
 	margin-top: 46px;
-	margin-left: calc(15% + 10px);
+	margin-left: calc(15% + 9px);
 	opacity: 0.68;
 }
 .top-menu {
-	position: absolute;
-	margin-top: 28px;
-	margin-left: calc(45% + 22px);
+	margin-top: 0;
+    margin-left: calc(23% + 22px);
+}
+.top-menu-sp {
+	list-style-type: none;
+    display: inline-block;
+    margin-left: calc(5% + 4px);
+    margin-top: 8%;
+    font-size: 21px;
 }
 .top-menu-links {
-	margin-left: calc(7% + 4px);
 	text-decoration: none;
-	color: #FFFFFF;
-	opacity: 0.68;
-	font-size: 21px;
-	font-family: sans-serif;
-	font-weight: 100;
+    color: #FFFFFF;
+    opacity: 0.68;
+    font-size: 21px;
+    font-family: sans-serif;
+    font-weight: 100;
 }
 .top-menu-links:hover {
+	opacity: 1;
+}
+.banner-text {
+	color: #FFFFFF;
+	position: absolute;
+    margin-left: calc(51% + 6px);
+    margin-top: calc(4% + 8px);
+    font-family: sans-serif;
+    font-size: 41px;
+    letter-spacing: 0.01em;
+}
+.banner-text-comment {
+	position: absolute;
+    margin-top: -14%;
+    margin-left: 0%;
+    font-size: 41px;
+    font-weight: 100;
+}
+.try-demo {
+	position: absolute;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+    margin-top: calc(20% + 13px);
+    margin-left: calc(53% + 6px);
+    opacity: 0.68;	
+}
+.try-demo:hover {
+	opacity: 1;
+}
+.try-demo-border {
+	position: absolute;
+    background-color: #12b367;
+    padding: 19px 69px;
+    border: 3px solid #000000;
+    opacity: 0.42;
+    margin-top: calc(19% + 16px);
+    margin-left: calc(51% + 11px);
+}
+.arrow-left {
+	position: absolute;
+	opacity: 0.22;
+	margin-top: calc(10% + 12px);
+    margin-left: calc(3% + 8px);
+}
+.arrow-left:hover {
+	opacity: 1;
+}
+.arrow-right {
+	position: absolute;
+	opacity: 0.22;
+	margin-top: calc(10% + 12px);
+    margin-left: calc(92% + 10px);
+}
+.arrow-right:hover {
 	opacity: 1;
 }
