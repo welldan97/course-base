@@ -97,3 +97,99 @@
 .arrow-right:hover {
 	opacity: 1;
 }
+.responsive {
+	list-style-type: none;
+    position: absolute;
+   	margin-left: calc(11% + 25px);
+    margin-top: calc(6% + 6px);
+}
+.responsive-link {
+	text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 23px;
+    color: #6b6a6a;
+    margin-left: calc(12% + 4px);
+    margin-top: calc(-7% + 4px);
+    text-align: center;
+    position: absolute;
+}
+.responsive-link:hover {
+	font-weight: bold;
+}
+.commerce {
+	list-style-type: none;
+    position: absolute;
+   	margin-left: calc(30% + 11px);
+    margin-top: calc(4% + 16px);
+    padding-top: calc(1% + 8px);
+    padding-right: calc(4% + 2px);
+    padding-left: calc(3% + 4px);
+    padding-bottom: calc(7% + 10px);
+}
+.commerce:hover {
+	box-shadow: 0px -1px 2px 0px #8e8e8e;
+}
+
+.commerce-link {
+	text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 23px;
+    color: #6b6a6a;
+    margin-left: calc(7% + 4px);
+    margin-top: calc(-3% + 4px);
+    text-align: center;
+    position: absolute;
+}
+.commerce-link:hover {
+	font-weight: bold;
+}
+.dailyblog {
+	list-style-type: none;
+    position: absolute;
+   	margin-left: calc(55% + 4px);
+    margin-top: calc(6% + 11px);
+}
+.dailyblog-link {
+	text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 23px;
+    color: #6b6a6a;
+    margin-left: calc(18% + 4px);
+    margin-top: calc(-1% + 4px);
+    text-align: center;
+    position: absolute;
+}
+.dailyblog-link:hover {
+	font-weight: bold;
+}
+.searchbased {
+	list-style-type: none;
+    position: absolute;
+   	margin-left: calc(76% + 3px);
+    margin-top: calc(6% + 10px);
+}
+.searchbased:hover {
+	position: absolute;
+}
+.searchbased-link {
+	text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+    color: #6b6a6a;
+    margin-left: calc(2% + 5px);
+    margin-top: calc(-2% + 3px);
+    text-align: center;
+    position: absolute;
+}
+.searchbased-link:hover {
+	font-size: 23px;
+}
+.ipad-block {
+	position: absolute;
+    margin-top: calc(31% + 9px);
+    margin-left: calc(22% + 5px);
+}
