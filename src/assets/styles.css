@@ -190,6 +190,31 @@
 }
 .ipad-block {
 	position: absolute;
-    margin-top: calc(31% + 9px);
+    margin-left: 0;
+    margin-top: 20%;
+}
+.ipad-img {
+    margin-top: calc(11% + 9px);
     margin-left: calc(22% + 5px);
+}
+.ipad-text {
+	font-family: sans-serif;
+	margin-left: calc(14% + 10px);
+	margin-right: 14%;
+}
+.ipad-text-h2 {
+	font-size: 37px;
+    font-weight: 100;
+    word-spacing: -2px;
+    margin-bottom: calc(2% + 6px);
+}
+.ipad-text-p1 {
+	font-size: 14px;
+    font-weight: 100;
+    line-height: 1.7;
+}
+.ipad-text-p2 {
+	font-size: 14px;
+    font-weight: 100;
+    line-height: 1.7;
 }
