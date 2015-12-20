@@ -207,14 +207,17 @@
     font-weight: 100;
     word-spacing: -2px;
     margin-bottom: calc(2% + 6px);
+    color: #4f4f4f;
 }
 .ipad-text-p1 {
 	font-size: 14px;
     font-weight: 100;
     line-height: 1.7;
+    color: #818181;
 }
 .ipad-text-p2 {
 	font-size: 14px;
     font-weight: 100;
     line-height: 1.7;
+    color: #818181;
 }
