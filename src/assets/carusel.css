@@ -1,0 +1,47 @@
+.carusel {
+	position: absolute;
+    margin-left: calc(51% + 6px);
+    margin-top: calc(4% + 8px);
+    font-family: sans-serif;
+    letter-spacing: 0.01em;
+}
+.carusel__banner_image {
+    position: absolute;
+    margin-top: 186px;
+    margin-left: calc(18% + 5px);
+}
+.carusel__text_comment {
+    margin-top: -14%;
+    margin-left: 0%;
+    font-size: 41px;
+    font-weight: 100;
+}
+.carusel__buttom {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+    margin-top: calc(20% + 13px);
+    margin-left: calc(53% + 6px);
+    opacity: 0.68;	
+}
+.carusel__buttom:hover {
+	opacity: 1;
+}
+.carusel__arrow_left {
+	opacity: 0.22;
+	margin-top: calc(10% + 12px);
+    margin-left: calc(3% + 8px);
+}
+.carusel__arrow_left:hover {
+	opacity: 1;
+}
+.carusel__arrow_right {
+	opacity: 0.22;
+	margin-top: calc(10% + 12px);
+    margin-left: calc(92% + 10px);
+}
+.carusel__arrow_right:hover {
+	opacity: 1;
+}
