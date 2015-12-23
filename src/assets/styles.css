@@ -1,49 +1,37 @@
 .body {
 	margin: 0;
 }
-.header {
-	height: 488px;
+.header{
+	position: relative;
 	background-color: #665555;
 	background: url('./images/header-background.png');
-	background-size: cover;
+	height: 481px;
+}
+.logo-and-top-menu {
+	min-width: 100%;
+    height: 153px;
+    position: relative;
 }
 .logo {
+	top: 52px;
+    left: 17%;
+    margin: 0;
+    position: absolute;
+}
+.top-menu-position {
 	position: absolute;
-	margin-top: 46px;
-	margin-left: calc(15% + 9px);
-	opacity: 0.68;
+    left: calc(31% + 237px);
 }
-
-.main-menu-content__block {
-	position: absolute;
-    margin-left: 0;
-    margin-top: 20%;
+.main-menu-position {
+	min-width: 100%;
+    height: 300px;
+    position: relative;
+    top: 74px;
 }
-.main-menu-content__img {
-    margin-top: calc(11% + 9px);
-    margin-left: calc(22% + 5px);
-}
-.main-menu-content__text {
-	font-family: sans-serif;
-	margin-left: calc(14% + 10px);
-	margin-right: 14%;
-}
-.main-menu-content__text_h2 {
-	font-size: 37px;
-    font-weight: 100;
-    word-spacing: -2px;
-    margin-bottom: calc(2% + 6px);
-    color: #4f4f4f;
-}
-.main-menu-content__text_p1 {
-	font-size: 14px;
-    font-weight: 100;
-    line-height: 1.7;
-    color: #818181;
-}
-.main-menu-content__text_p2 {
-	font-size: 14px;
-    font-weight: 100;
-    line-height: 1.7;
-    color: #818181;
+.main-menu-content-position {
+	float: left;
+	min-width: 100%;
+    height: 680px;
+    top: 56px;
+    position: relative;
 }
