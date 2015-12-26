@@ -5,7 +5,7 @@
 	position: relative;
 	background-color: #665555;
 	background: url('./images/header-background.png');
-	height: 481px;
+	height: 488px;
 }
 .logo-and-top-menu {
 	min-width: 100%;
@@ -26,12 +26,27 @@
 	min-width: 100%;
     height: 300px;
     position: relative;
-    top: 74px;
+    top: 67px;
 }
 .main-menu-content-position {
 	float: left;
 	min-width: 100%;
-    height: 680px;
-    top: 56px;
+    height: 783px;
+    top: 68px;    
     position: relative;
+}
+.content-block-position {
+	position: relative;
+    top: 70px;
+    min-width: 100%;
+    height: 415px;
+    float: left;
+    border-bottom: 1px solid #e5e5e5;
+}
+.footer-position {
+	position: relative;
+    min-width: 100%;
+    top: 92px;
+    height: 388px;
+    float: left;
 }

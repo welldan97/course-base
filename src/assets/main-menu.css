@@ -1,19 +1,20 @@
 .main-menu {
     position: absolute;
-    left: calc(11% + 27px);
-    width: 1000px;
+    left: calc(10% + 6px);
+    width: 1022px;
+    height: inherit;
 }
 .main-menu__block {
 	list-style-type: none;
     display: inline-block;
     margin: 0;
-    padding: 41px 0 0 0;
-    height: 267px;
-    width: 168px;
+    padding: 23px 0 0 34px;
+    height: inherit;
+    width: 246px;
     float: left;
 }
 .main-menu__block + .main-menu__block {
-    margin-left: calc(9% + 5px);
+    margin-left: calc(1% + 2px);
 }
 .main-menu__block_img {
     padding: 0 0 0 13px;
