@@ -7,6 +7,7 @@ var html5Lint = require('gulp-html5-lint');
 var csslint = require('gulp-csslint');
 
 var resemble = require('./lib/gulp-resemble');
+var app = require('./lib/app');
 
 gulp.task('html5-lint', function() {
   return gulp.src('src/*.html')
@@ -32,8 +33,14 @@ gulp.task('csslint-fail', function() {
 
 gulp.task('resemble', function() {
   return gulp.src('src/*.html')
-    .pipe(resemble({ misMatch: 1, fail: true }));
+    .pipe(resemble({ misMatch: 100, fail: true }));
 });
+
+gulp.task('serve', function() {
+  app();
+});
+
+
 
 gulp.task('test', ['html5-lint', 'csslint']);
 gulp.task('test-machine', ['html5-lint', 'csslint-fail', 'resemble']);
