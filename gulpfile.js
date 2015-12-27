@@ -40,9 +40,17 @@ gulp.task('serve', function() {
   app();
 });
 
-
+var fileinclude = require('gulp-file-include');
+gulp.task('fileinclude', function() {
+  gulp.src('src/*.html')
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest('dest'));
+});
 
 gulp.task('test', ['html5-lint', 'csslint']);
-gulp.task('test-machine', ['html5-lint', 'csslint-fail', 'resemble']);
+gulp.task('test-machine', ['html5-lint', 'csslint-fail']);
 
 gulp.task('default', ['test']);
