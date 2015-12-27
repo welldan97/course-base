@@ -109,7 +109,7 @@
 	outline: none;
 }
 .footer__navigation {
-	background: url('./images/footer-background.png');
+	background: url('../images/footer-background.png');
 	float: left;
 	height: 244px;
 	position: absolute;

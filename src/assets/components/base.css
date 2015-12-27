@@ -1,0 +1,17 @@
+/*csslint universal-selector:false, box-sizing:false */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #ffffff;
+  font-size: 50px;
+  font-weight: bold;
+}
