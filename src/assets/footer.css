@@ -1,166 +1,165 @@
 .footer__login_subscribe {
 	position: absolute;
-    height: 145px;
-    left: calc(10% + 4px);
-    top: 1px;
-    width: 1006px;
+	height: 145px;
+	left: calc(10% + 4px);
+	top: 1px;
+	width: 1006px;
 }
 .footer__login {
 	background-color: #e67624;
-    border-radius: 4pt;
-    height: 109px;
-    position: absolute;
-    width: 470px;
+	border-radius: 4pt;
+	height: 109px;
+	position: absolute;
+	width: 470px;
 }
 .footer__login_h2 {
+	color: #FFF;
 	font-family: sans-serif;
-    color: #FFF;
-    font-size: 27px;
-    font-weight: 100;
-    left: 26px;
-    margin: 0;
-    position: absolute;
-    top: 12px;
+	font-size: 27px;
+	font-weight: 100;
+	left: 26px;
+	margin: 0;
+	position: absolute;
+	top: 12px;
 }
 .footer__login_name {
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: 100;
+	letter-spacing: -0.4pt;
+	margin: 62px 0 0 28px;
 	padding: 4px 5px 2px 9px;
-    font-family: sans-serif;
-    font-size: 16px;
-    font-weight: 100;
-    letter-spacing: -0.4pt;
-    margin: 62px 0 0 28px;
 }
 .footer__login_password {
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: 100;
+	letter-spacing: -0.4pt;
+	margin-top: 62px;
 	padding: 4px 0 2px 9px;
-    font-family: sans-serif;
-    font-size: 16px;
-    font-weight: 100;
-    letter-spacing: -0.4pt;
-    margin: 62px 0 0 0;
 }
 .footer__login_button {
+	background-color: #444;
+	border: none;
 	color: #FFF;
-    background-color: #444;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 100;
-    letter-spacing: 0;
-    margin: -2px;
-    outline: none;
-    padding: 7px 12px 5px 11px;
-    text-decoration: none;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 100;
+	margin: -2px;
+	outline: none;
+	padding: 7px 12px 5px 11px;
+	text-decoration: none;
 }
 .footer__login_button:active {
-    outline: none;
+	outline: none;
 }
 .footer__login_button:hover {
-    outline: none;
+	outline: none;
 }
 .footer__login_button:focus {
-    outline: none;
+	outline: none;
 }
 .footer__subscribe {
 	background-color: #01d4f3;
-    border-radius: 4pt;
-    height: 109px;
-    left: calc(7% + 465px);
-    position: absolute;
-    width: 470px;
+	border-radius: 4pt;
+	height: 109px;
+	left: calc(7% + 465px);
+	position: absolute;
+	width: 470px;
 }
 .footer__subscribe_h2 {
+	color: #FFF;
 	font-family: sans-serif;
-    color: #FFF;
-    font-size: 27px;
-    font-weight: 100;
-    left: 26px;
-    letter-spacing: -0.3pt;
-    margin: 0;
-    position: absolute;
-    top: 12px;
+	font-size: 27px;
+	font-weight: 100;
+	left: 26px;
+	letter-spacing: -0.3pt;
+	margin: 0;
+	position: absolute;
+	top: 12px;
 }
 .footer__subscribe_name {
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: 100;
+	letter-spacing: -0.4pt;
+	margin: 62px 0 0 28px;
 	padding: 4px 74px 2px 9px;
-    font-family: sans-serif;
-    font-size: 16px;
-    font-weight: 100;
-    letter-spacing: -0.4pt;
-    margin: 62px 0 0 28px;
 }
 .footer__subscribe_button {
+	background-color: #444;
+	border: none;
 	color: #FFF;
-    background-color: #444;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 100;
-    letter-spacing: -0.5pt;
-    margin: 0 0 0 37px;
-    outline: none;
-    padding: 7px 22px 5px 24px;
-    text-decoration: none;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 100;
+	letter-spacing: -0.5pt;
+	margin-left: 37px;
+	outline: none;
+	padding: 7px 22px 5px 24px;
+	text-decoration: none;
 }
 .footer__subscribe_button:active {
-    outline: none;
+	outline: none;
 }
 .footer__subscribe_button:hover {
-    outline: none;
+	outline: none;
 }
 .footer__subscribe_button:focus {
-    outline: none;
+	outline: none;
 }
 .footer__navigation {
+	background: url('./images/footer-background.png');
+	float: left;
+	height: 244px;
 	position: absolute;
-    background: url('./images/footer-background.png');
-    float: left;
-    height: 244px;
-    top: 144px;
-    width: 100%;
+	top: 144px;
+	width: 100%;
 }
 .footer__navigation_block_1 {
+	height: 212px;
+	left: calc(13% + 11px);
 	position: absolute;
-    height: 212px;
-    left: calc(13% + 11px);
-    top: 32px;
-    width: 113px;
+	top: 32px;
+	width: 113px;
 }
 .footer__navigation_block_1_h2, .footer__navigation_block_2_h2 {
+	color: #fff;
+	font-family: sans-serif;
 	font-size: 22px;
-    color: #fff;
-    font-family: sans-serif;
-    font-weight: 100;
-    margin: 0;
+	font-weight: 100;
+	margin: 0;
 }
 .footer__navigation_block_1_nav, .footer__navigation_block_2_nav {
 	height: 145px;
-    padding-top: 4px;
+	padding-top: 4px;
 }
 .footer__navigation_block_1_line, .footer__navigation_block_2_line {
-    padding: 6px 0 0 2px;
-    display: flex;
+	display: flex;
+	padding: 6px 0 0 2px;
 }
 .footer__navigation_block_1_line + .footer__navigation_block_1_line {
 	top: 10px;
 }
 .footer__navigation_block_1_link, .footer__navigation_block_2_link {
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 14px;
+	font-weight: 100;
+	letter-spacing: -0.4pt;
+	opacity: 0.5;
 	text-decoration: none;
-    color: #fff;
-    font-family: sans-serif;
-    font-size: 14px;
-    font-weight: 100;
-    letter-spacing: -0.4pt;
-    opacity: 0.5;
 }
 .footer__navigation_block_1_link:hover {
 	opacity: 1;
 	transition: all 0.8s ease;
 }
 .footer__navigation_block_2 {
+	height: 212px;
+	left: calc(20% + 112px);
 	position: absolute;
-    height: 212px;
-    left: calc(20% + 112px);
-    top: 32px;
-    width: 113px;
+	top: 32px;
+	width: 113px;
 }
 .footer__navigation_block_2_line + .footer__navigation_block_2_line {
 	top: 10px;
@@ -170,93 +169,93 @@
 	transition: all 0.8s ease;
 }
 .footer__navigation_block_3 {
+	height: 195px;
+	left: calc(28% + 200px);
 	position: absolute;
-    left: calc(28% + 200px);
-    top: 9px;
-    height: 195px;
-    width: 353px;
+	top: 9px;
+	width: 353px;
 }
 .footer__navigation_block_3_h2 {
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 21px;
+	font-weight: 100;
+	letter-spacing: -0.2pt;
 	margin: 0px;
-    font-size: 21px;
-    font-family: sans-serif;
-    font-weight: 100;
-    color: #fff;
-    letter-spacing: -0.2pt;
-    width: 188px;
-    position: absolute;
-    top: 24px;
+	position: absolute;
+	top: 24px;
+	width: 188px;
 }
 .footer__navigation_block_3_img_1 {
 	position: absolute;
-    left: calc(10% + 156px);
-    opacity: 0.2;
+	left: calc(10% + 156px);
+	opacity: 0.2;
 }
 .footer__navigation_block_3_img_1:hover {
 	opacity: 1;
 	transition: all 0.8s ease;
 }
 .footer__navigation_block_3_img_2 {
+	left: calc(10% + 176px);
+	opacity: 0.2;
 	position: absolute;
-    left: calc(10% + 176px);
-    opacity: 0.2;
 }
 .footer__navigation_block_3_img_2:hover {
 	opacity: 1;
 	transition: all 0.8s ease;
 }
 .footer__navigation_block_3_text {
+	color: #FFF;
+	font-family: sans-serif;
+	font-size: 13px;
+	font-weight: 100;
+	height: 84px;
+	letter-spacing: 0.12pt;
+	line-height: 16.5pt;
+	margin: 0;
+	opacity: 0.5;
+	padding: 0 0 0 2px;
 	position: absolute;
-    top: 60px;
-    margin: 0;
-    padding: 0 0 0 2px;
-    font-family: sans-serif;
-    font-size: 13px;
-    font-weight: 100;
-    height: 84px;
-    width: 330px;
-    color: #FFF;
-    line-height: 16.5pt;
-    letter-spacing: 0.12pt;
-    opacity: 0.5;
+	top: 60px;
+	width: 330px;
 }
 .footer__navigation_block_3_link {
 	color: #FFF;
-    font-family: sans-serif;
-    font-size: 13px;
-    line-height: 16pt;
-    margin: 0px;
-    opacity: 0.66;
-    padding: 0 0 0 3px;
-    position: absolute;
-    text-decoration: none;
-    top: 150px;
-    width: 150px;
+	font-family: sans-serif;
+	font-size: 13px;
+	line-height: 16pt;
+	margin: 0px;
+	opacity: 0.66;
+	padding: 0 0 0 3px;
+	position: absolute;
+	text-decoration: none;
+	top: 150px;
+	width: 150px;
 }
 .footer__navigation_block_3_link:hover {
 	opacity: 1;
 	transition: all 0.8s ease;
 }
 .footer__logo {
+	left: calc(32% + 509px);
+	opacity: 0.22;
 	position: absolute;
-    left: calc(32% + 509px);
-    opacity: 0.22;
-    top: 63px;
+	top: 63px;
 }
 .footer__copyright {
+	left: calc(32% + 510px);
 	position: absolute;
-    left: calc(32% + 510px);
-    top: 144px;
+	top: 144px;
 }
 .footer__copyright_link {
+	color: #FFF;
+	font-family: sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 100;
+	letter-spacing: -0.4pt;
+	opacity: 0.8;
 	text-decoration: none;
-    color: #FFF;
-    font-family: sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 100;
-    letter-spacing: -0.4pt;
-    opacity: 0.8;
 
 }
 .footer__copyright_link:hover {
