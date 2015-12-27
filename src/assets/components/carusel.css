@@ -1,0 +1,83 @@
+.carusel {
+    color: #FFF;
+    display: inline-block;
+    font-family: sans-serif;
+    height: 389px;
+    letter-spacing: 0.01em;
+    min-width: 100%;
+    position: relative;
+}
+.carusel__arrow_left {
+    left: calc(3% + 8px);
+    margin: 0;
+    opacity: 0.22;
+    position: absolute;
+    top: 119px;
+    transition: all 0.8s ease;
+}
+.carusel__arrow_left:hover {
+    opacity: 0.85;
+    transition: all 0.8s ease;
+}
+.carusel__banner_image {
+    left: calc(18% + 5px);
+    position: absolute;
+    top: 33px;
+}
+.carusel__banner_info {
+    left: calc(26% + 322px);
+    position: absolute;
+    top: 89px;
+    width: 348px;
+}
+.carusel__banner_name {
+    font-size: 65px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin: 0;
+}
+.carusel__text_comment {
+    font-size: 41px;
+    font-weight: 100;
+    letter-spacing: 0.6pt;
+}
+.carusel__button {
+    background-color: rgba(18,179,103,0.42);
+    border: none;
+    box-shadow: 0 0 6px 4px rgba(10,10,10,0.42);
+    color: #FFF;
+    float: left;
+    font-size: 22px;
+    font-weight: 100;
+    letter-spacing: 0;
+    margin: 0;
+    margin: 29px 0 0 calc(2% + 1px);
+    opacity: 0.68;
+    padding: 7px 25px 5px 16px;
+    text-decoration: none;
+}
+.carusel__button:active {
+    background-color: rgba(18,179,103,0.42);
+    box-shadow: 0 0 3px 0 rgba(10,10,10,0.42);
+    opacity: 0.42;
+    outline: none;
+}
+.carusel__button:hover {
+    cursor: pointer;
+    opacity: 0.85;
+}
+.carusel__button:focus {
+    outline: none;
+}
+.carusel__arrow_right {
+    left: calc(65% + 351px);
+    margin: 0;
+    opacity: 0.22;
+    position: absolute;
+    top: 119px;
+    transition: all 0.8s ease;
+}
+.carusel__arrow_right:hover {
+    opacity: .85;
+    transition: all 0.8s ease;
+}

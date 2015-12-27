@@ -1,0 +1,39 @@
+.content-block {
+	height: 414px;
+	left: calc(10% + 2px);
+	position: absolute;
+	width: 1120px;
+}
+.content-block__img {
+	left: 3px;
+	position: absolute;
+	top: 26px;
+}
+.content-block__info {
+	height: 300px;
+	left: calc(23% + 251px);
+	position: absolute;
+	top: 52px;
+	width: 608px;
+}
+.content-block__h2 {
+	color: #4f4f4f;
+	font-family: sans-serif;
+	font-size: 29px;
+	font-weight: 100;
+	letter-spacing: 0.7pt;
+	margin-bottom: 28px;
+}
+.content-block__text {
+	color: #8a8888;
+	font-family: sans-serif;
+	font-size: 15px;
+	font-weight: 100;
+	letter-spacing: 0.41pt;
+	margin-top: 16px;
+}
+.content-block__text:before {
+	content: url('./images/shape.png');
+   	margin-right: 13px;
+   	vertical-align: middle;
+}
