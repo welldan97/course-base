@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -10,6 +11,31 @@
     <link rel="stylesheet" type="text/css" href="./assets/main-menu-content.css">
     <link rel="stylesheet" type="text/css" href="./assets/content-block.css">
     <link rel="stylesheet" type="text/css" href="./assets/footer.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="./assets/templates.js"></script>
+    <template id="main-menu">
+    <section class="main-menu-position">
+      <nav class="main-menu">
+        <li class="main-menu__block">
+          <img class="main-menu__block_img"src="./assets/images/responsive.png" alt="Responsive Websites">
+          <a class="main-menu__block_link" href="">Responsive<br>Websites</a>
+        </li>
+        <li class="main-menu__block">
+          <img class="main-menu__block_img"src="./assets/images/commerce.png" alt="e Commerce Websites">
+          <a class="main-menu__block_link" href="">e Commerce<br>Websites</a>
+        </li>
+        <li class="main-menu__block">
+          <img class="main-menu__block_img"src="./assets/images/dailyblog.png" alt="Daily blog Websites">
+          <a class="main-menu__block_link" href="">Daily blog<br>Websites</a>
+        </li>
+        <li class="main-menu__block">
+          <img class="main-menu__block_img"src="./assets/images/searchbased.png" alt="Search based Websites">
+          <a class="main-menu__block_link" href="">Search based<br>Websites</a>
+        </li>
+      </nav>
+    </section>
+    </template>
   </head>
   <body class="body">
   	<header class="header"> 
@@ -35,26 +61,7 @@
           <p class="carusel__arrow_right"><a href=""><img src="./assets/images/arrow-right.png" alt="Right" title="right"></a></p>
         </article>
     </header>
-    <section class="main-menu-position">
-      <nav class="main-menu">
-        <li class="main-menu__block">
-          <img class="main-menu__block_img"src="./assets/images/responsive.png" alt="Responsive Websites">
-          <a class="main-menu__block_link" href="">Responsive<br>Websites</a>
-        </li>
-        <li class="main-menu__block">
-          <img class="main-menu__block_img"src="./assets/images/commerce.png" alt="e Commerce Websites">
-          <a class="main-menu__block_link" href="">e Commerce<br>Websites</a>
-        </li>
-        <li class="main-menu__block">
-          <img class="main-menu__block_img"src="./assets/images/dailyblog.png" alt="Daily blog Websites">
-          <a class="main-menu__block_link" href="">Daily blog<br>Websites</a>
-        </li>
-        <li class="main-menu__block">
-          <img class="main-menu__block_img"src="./assets/images/searchbased.png" alt="Search based Websites">
-          <a class="main-menu__block_link" href="">Search based<br>Websites</a>
-        </li>
-      </nav>
-    </section>
+    <div data-template="main-menu"></div>
     <section class="main-menu-content-position">
       <section class="main-menu-content">
         <img class="main-menu-content__img" src="./assets/images/ipad.png" alt="IPad">
