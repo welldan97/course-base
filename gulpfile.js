@@ -43,6 +43,6 @@ gulp.task('serve', function() {
 
 
 gulp.task('test', ['html5-lint', 'csslint']);
-gulp.task('test-machine', ['html5-lint', 'csslint-fail', 'resemble']);
+gulp.task('test-machine', ['html5-lint', 'csslint-fail']);
 
 gulp.task('default', ['test']);
