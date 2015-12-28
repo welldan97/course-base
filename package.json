@@ -11,8 +11,10 @@
   "devDependencies": {
     "coffee-script": "^1.9.2",
     "dnode": ">=1.2.2",
+    "express": "^4.13.3",
     "gulp": "^3.9.0",
     "gulp-csslint": "^0.2.0",
+    "gulp-file-include": "^0.13.7",
     "gulp-html5-lint": "^1.1.0",
     "node-resemble-js": "0.0.4",
     "phantom": "^0.8.4",

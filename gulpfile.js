@@ -7,6 +7,7 @@ var html5Lint = require('gulp-html5-lint');
 var csslint = require('gulp-csslint');
 
 var resemble = require('./lib/gulp-resemble');
+var app = require('./lib/app');
 
 gulp.task('html5-lint', function() {
   return gulp.src('src/*.html')
@@ -35,7 +36,21 @@ gulp.task('resemble', function() {
     .pipe(resemble({ misMatch: 100, fail: true }));
 });
 
+gulp.task('serve', function() {
+  app();
+});
+
+var fileinclude = require('gulp-file-include');
+gulp.task('fileinclude', function() {
+  gulp.src('src/*.html')
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest('dest'));
+});
+
 gulp.task('test', ['html5-lint', 'csslint']);
-gulp.task('test-machine', ['html5-lint', 'csslint-fail', 'resemble']);
+gulp.task('test-machine', ['html5-lint', 'csslint-fail']);
 
 gulp.task('default', ['test']);
