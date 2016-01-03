@@ -1,3 +1,35 @@
+body {
+	margin: 0;
+}
 .header {
-	background: url('./pixel perfect/images/header-background.png');
+	background: url('../images/header-background.png') #424844;
+    background-size: cover;
+    height: 488px;
+}
+.header__menu {
+	text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+    position: absolute;
+    margin: 31px 134px;
+    display: inline-block;
+    color: #ffffff;
+    opacity: 0.6;
+}
+.header__menu > ul {
+	list-style: none;
+}
+.header__menu > ul > li {
+	float: left;
+}
+.header__menu > ul > li + li {
+	padding-left: 46px;
+}
+.header__logo {
+	margin: 0;
+	margin-left: calc(14% + 6px);
+    padding-top: 38px;
+    width: 250px;
+    display: inline-block;
 }
