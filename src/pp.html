@@ -6,99 +6,15 @@
     <link rel="stylesheet" type="text/css" href="./assets/components/header.css">
   </head>
   <body>
-    @@include('header')
+    @@include('header.html')
     <main>
-      <nav>
-        <ul>
-          <li>Responsive<br>Websites</li>
-          <li>e Commerce<br>Websites</li>
-          <li>Daily blog<br>Websites</li>
-          <li>Search based<br>Websites</li>
-        </ul>
-      </nav>
+      @@include('main-menu.html')
       <article>
-        <div>
-          <img src="" alt="ipad-image">
-          <h2>Lorem Ipsum is simply dummy text</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-          </p>
-          <p>
-            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          </p>
-        </div>
-        <section>
-          <img src="" alt="screenshot">
-          <h3>Why choose us ?</h3>
-          <nav>
-            <ul>
-              <li>Lorem Ipsum is simply dummy text of the printing and typesetting</li>
-              <li>Lorem Ipsum has been the industry's standard dummy text ever</li>
-              <li>When an unknown printer took a galley of type and scrambled</li>
-              <li>It has survived not only five centuries, but also the leap into electronic </li>
-              <li>It was popularised in the 1960s with the release of Letraset sheets containing</li>
-              <li>More recently with desktop publishing software like Aldus PageMaker </li>
-            </ul>
-          </nav>
-        </section>
-        <section>
-          <form>
-            <h4>Member login</h4>
-            <input type="text" value="User name">
-            <input type="password" value="Password">
-            <input type="submit" value="Log me in">
-          </form>
-          <form>
-            <h4>Subscribe to our weekly newsletter</h4>
-            <input type="email" value="email adress">
-            <input type="submit" value="Subscribe">
-          </form>
-        </section>  
+        @@include('main-content.html')
+        @@include('main-screenshot.html')
+        @@include('main-form.html')  
       </article>
     </main>
-    <footer>
-      <div>
-        <h5>About Us</h5>
-        <nav>
-          <ul>
-            <li>About us</li>
-            <li>Why us</li>
-            <li>Customer Stories</li>
-            <li>Press Resources</li>
-            <li>Press Releases</li>
-            <li>Contact us</li>
-          </ul>
-        </nav>
-      </div>
-      <div>
-        <h5>About Us</h5>
-        <nav>
-          <ul>
-            <li>About us</li>
-            <li>Why us</li>
-            <li>Customer Stories</li>
-            <li>Press Resources</li>
-            <li>Press Releases</li>
-            <li>Contact us</li>
-          </ul>
-        </nav>
-      </div>
-      <div>
-        <h5>Testimoanials</h5>
-        <img src="" alt="footer-button-left">
-        <img src="" alt="footer-button-right">
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and<br>
-          typesetting industry. Lorem Ipsum has been the industr<br>
-          standard dummy text ever since the 1500s,<br>
-          when an unknown printer took a 
-        </p>
-        <p>
-          Lorem Ipsum is simply<br>
-          Owner, Lorem Ipsum
-        </p>
-      </div>
-      <img src="" alt="Logo-image">
-    </footer>
+    @@include('footer.html')
   </body>
 </html>
