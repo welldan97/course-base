@@ -45,7 +45,7 @@ gulp.task('fileinclude', function() {
   gulp.src('src/*.html')
     .pipe(fileinclude({
       prefix: '@@',
-      basepath: '@file'
+      basepath: './src/components'
     }))
     .pipe(gulp.dest('dest'));
 });
