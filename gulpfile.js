@@ -3,12 +3,17 @@
 var gulp = require('gulp');
 var through = require('through2');
 require('coffee-script').register();
-var html5Lint = require('gulp-html5-lint');
-var csslint = require('gulp-csslint');
+var del = require('del');
 
-var resemble = require('./lib/gulp-resemble');
-var app = require('./lib/app');
+var changed = require('gulp-changed');
+var csslint = require('gulp-csslint');
+var debug = require('gulp-debug');
 var fileinclude = require('gulp-file-include');
+var html5Lint = require('gulp-html5-lint');
+var resemble = require('./lib/gulp-resemble');
+var runSequence = require('run-sequence');
+
+var app = require('./lib/app');
 
 // Test
 
@@ -40,9 +45,14 @@ gulp.task('resemble', function() {
 });
 
 // Build
+gulp.task('clean', function () {
+  return del(['dest/**/*']);
+});
 
 gulp.task('fileinclude', function() {
   gulp.src('src/*.html')
+    .pipe(changed('dest'))
+    .pipe(debug())
     .pipe(fileinclude({
       prefix: '@@',
       basepath: './src/components'
@@ -50,14 +60,28 @@ gulp.task('fileinclude', function() {
     .pipe(gulp.dest('dest'));
 });
 
+gulp.task('copyAssets', function() {
+  gulp.src('src/assets/**/*')
+    .pipe(changed('dest/assets'))
+    .pipe(debug())
+    .pipe(gulp.dest('dest/assets'));
+});
+
 // Serve
 
-gulp.task('serve', function() {
+gulp.task('servePages', function() {
   app();
+});
+
+gulp.task('watch', function(){
+  gulp.watch('./src/**/*', ['build']);
 });
 
 gulp.task('test', ['html5-lint', 'csslint']);
 gulp.task('test-machine', ['html5-lint', 'csslint-fail']);
-gulp.task('build', ['fileinclude']);
+gulp.task('build', ['fileinclude', 'copyAssets']);
+gulp.task('serve', ['servePages', 'watch']);
 
-gulp.task('default', ['test']);
+gulp.task('default', function(cb) {
+  runSequence('clean', 'build', 'serve', cb);
+});
