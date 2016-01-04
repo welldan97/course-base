@@ -17,19 +17,22 @@ body {
     color: #ffffff;
     opacity: 0.6;
 }
-.header__menu > ul {
+.header__list {
 	list-style: none;
 }
-.header__menu > ul > li {
+.header__list_item{
 	float: left;
 }
-.header__menu > ul > li + li {
+.header__list_item + .header__list_item {
 	padding-left: 46px;
 }
 .header__logo {
 	margin: 0;
-	margin-left: calc(14% + 9px);
+	margin-left: calc(14% + 7px);
     padding-top: 38px;
     width: 250px;
     display: inline-block;
+}
+.slider {
+
 }
