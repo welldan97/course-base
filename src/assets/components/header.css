@@ -28,7 +28,7 @@ body {
 }
 .header__logo {
 	margin: 0;
-	margin-left: calc(14% + 6px);
+	margin-left: calc(14% + 9px);
     padding-top: 38px;
     width: 250px;
     display: inline-block;
