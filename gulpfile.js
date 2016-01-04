@@ -5,6 +5,7 @@ var through = require('through2');
 require('coffee-script').register();
 var del = require('del');
 
+var autoprefixer = require('gulp-autoprefixer');
 var changed = require('gulp-changed');
 var csslint = require('gulp-csslint');
 var debug = require('gulp-debug');
@@ -12,7 +13,6 @@ var fileinclude = require('gulp-file-include');
 var html5Lint = require('gulp-html5-lint');
 var resemble = require('./lib/gulp-resemble');
 var runSequence = require('run-sequence');
-
 var app = require('./lib/app');
 
 // Test
@@ -60,10 +60,18 @@ gulp.task('fileinclude', function() {
     .pipe(gulp.dest('dest'));
 });
 
-gulp.task('copyAssets', function() {
-  return gulp.src('src/assets/**/*')
+gulp.task('copyJs', function() {
+  return gulp.src('src/assets/**/*.js')
     .pipe(changed('dest/assets'))
     .pipe(debug())
+    .pipe(gulp.dest('dest/assets'));
+});
+
+gulp.task('copyCSS', function() {
+  return gulp.src('src/assets/**/*.css')
+    .pipe(changed('dest/assets'))
+    .pipe(debug())
+    .pipe(autoprefixer())
     .pipe(gulp.dest('dest/assets'));
 });
 
@@ -85,7 +93,7 @@ gulp.task('test-machine', function(cb) {
   runSequence('clean', 'build', ['html5-lint', 'csslint-fail'], cb);
 });
 
-gulp.task('build', ['fileinclude', 'copyAssets'])
+gulp.task('build', ['fileinclude', 'copyJs', 'copyCSS'])
 gulp.task('serve', ['servePages', 'watch']);
 
 gulp.task('default', function(cb) {
