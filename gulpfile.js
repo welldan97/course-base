@@ -18,12 +18,12 @@ var app = require('./lib/app');
 // Test
 
 gulp.task('html5-lint', function() {
-  return gulp.src('src/*.html')
+  return gulp.src('dest/*.html')
     .pipe(html5Lint({ errorsOnly: true }));
 });
 
 gulp.task('csslint', function() {
-  gulp.src('src/assets/*.css')
+  gulp.src('dest/assets/*.css')
     .pipe(csslint({
       'box-model': false
     }))
@@ -31,7 +31,7 @@ gulp.task('csslint', function() {
 });
 
 gulp.task('csslint-fail', function() {
-  gulp.src('src/assets/*.css')
+  gulp.src('dest/assets/*.css')
     .pipe(csslint({
       'box-model': false
     }))
@@ -77,8 +77,14 @@ gulp.task('watch', function(){
   gulp.watch('./src/**/*', ['build']);
 });
 
-gulp.task('test', ['html5-lint', 'csslint']);
-gulp.task('test-machine', ['html5-lint', 'csslint-fail']);
+gulp.task('test', function(cb) {
+  runSequence('clean', ['html5-lint', 'csslint'], cb);
+});
+
+gulp.task('test-machine', function(cb) {
+  runSequence('clean', ['html5-lint', 'csslint-fail'], cb);
+});
+
 gulp.task('build', ['fileinclude', 'copyAssets']);
 gulp.task('serve', ['servePages', 'watch']);
 
